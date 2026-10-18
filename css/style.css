@@ -200,7 +200,7 @@ img {
 .content-list, .step-list {
     padding: 1.25rem 1.25rem 0 2.75rem;
 }
-.card.content-list {
+.card.content-list, .card.step-list {
     padding-bottom: 1.25rem;
 }
 .content-list li:last-child, .step-list li:last-child {
