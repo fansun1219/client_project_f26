@@ -179,7 +179,7 @@ img {
 .card-grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
 }
 /* Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Grids */
 
