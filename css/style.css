@@ -2,7 +2,7 @@ body {
     background-color: #f5f8fb;
     color: #172a3a;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+    font-size: clamp(0.9375rem, 0.85rem + 0.3818vw, 1.125rem);
     line-height: 1.6;
 }
 h1, h2, h3 {
@@ -12,14 +12,14 @@ h1, h2, h3 {
     line-height: 1.2;
 }
 h1 {
-    font-size: clamp(1.55rem, 1.35rem + 1vw, 2rem);
+    font-size: clamp(1.55rem, 1rem + 2.2727vw, 2.5rem);
 }
 h2 {
-    font-size: clamp(1.3rem, 1.16rem + 0.7vw, 1.6rem);
+    font-size: clamp(1.3rem, 0.8rem + 2.0091vw, 2rem);
     margin-bottom: 1rem;
 }
 h3 {
-    font-size: clamp(1.1rem, 1.03rem + 0.35vw, 1.25rem);
+    font-size: clamp(1.1rem, 0.85rem + 1.0045vw, 1.5rem);
     margin-bottom: 0.75rem;
 }
 
@@ -100,6 +100,7 @@ img {
     display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -113,7 +114,7 @@ img {
     align-items: center;
     color: #ffffff;
     display: flex;
-    font-size: clamp(0.78rem, 0.64rem + 0.65vw, 0.95rem);
+    font-size: clamp(0.78rem, 0.5rem + 1.1591vw, 1.125rem);
     justify-content: center;
     justify-self: center;
     min-height: 44px;
@@ -121,8 +122,8 @@ img {
     text-align: center;
     text-decoration-color: transparent;
     text-decoration-line: underline;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.3rem;
     white-space: nowrap;
     width: fit-content;
 }
