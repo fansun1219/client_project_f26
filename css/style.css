@@ -1,0 +1,305 @@
+body {
+    background-color: #f5f8fb;
+    color: #172a3a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+    line-height: 1.6;
+}
+h1, h2, h3 {
+    color: #00274c;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    line-height: 1.2;
+}
+h1 {
+    font-size: clamp(1.55rem, 1.35rem + 1vw, 2rem);
+}
+h2 {
+    font-size: clamp(1.3rem, 1.16rem + 0.7vw, 1.6rem);
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: clamp(1.1rem, 1.03rem + 0.35vw, 1.25rem);
+    margin-bottom: 0.75rem;
+}
+
+p, ul, ol, table {
+    margin-bottom: 1.25rem;
+}
+ul, ol {
+    padding-left: 1.5rem;
+}
+li {
+    margin-bottom: 0.65rem;
+}
+strong {
+    color: #00274c;
+}
+a {
+    color: #2f65a7;
+    font-weight: bold;
+    overflow-wrap: break-word;
+    text-decoration: underline;
+}
+a:hover {
+    color: #00274c;
+    text-decoration-thickness: 3px;
+}
+a:focus {
+    outline: 3px solid #ffcb05;
+    outline-offset: 3px;
+}
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.skip-link {
+    background-color: #ffcb05;
+    color: #00274c;
+    left: 1rem;
+    padding: 0.75rem 1rem;
+    position: absolute;
+    top: -80px;
+    z-index: 1000;
+}
+.skip-link:focus {
+    top: 10px;
+}
+/* Source: https://webaim.org/techniques/skipnav/ */
+
+.site-header {
+    background-color: #00274c;
+    border-top: 6px solid #ffcb05;
+    padding: 1rem;
+    position: relative;
+}
+/* Source for U-M brand colors: https://brand.umich.edu/wp-content/uploads/2023/07/220021-U-M-Style-Guide-July2023.pdf */
+
+.header-inner {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1088px;
+}
+.site-logo {
+    margin: 0;
+    width: 90px;
+}
+.site-nav {
+    flex: 1 1 50rem;
+    margin: 0 0 0 auto;
+    max-width: 56rem;
+}
+
+.site-nav ul {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* Source: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
+
+.site-nav li {
+    margin: 0;
+}
+.site-nav a {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    font-size: clamp(0.78rem, 0.64rem + 0.65vw, 0.95rem);
+    justify-content: center;
+    justify-self: center;
+    min-height: 44px;
+    padding: 0.35rem 0.25rem;
+    text-align: center;
+    text-decoration-color: transparent;
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 0.2rem;
+    white-space: nowrap;
+    width: fit-content;
+}
+.site-nav a:hover, .site-nav a:focus {
+    color: #ffffff;
+    text-decoration-color: #ffcb05;
+}
+.site-nav a[aria-current="page"] {
+    color: #ffffff;
+    text-decoration-color: #ffcb05;
+}
+.main-content {
+    margin: 0 auto;
+    max-width: 1088px;
+    padding: 2rem 1rem 3rem;
+}
+.page-title {
+    border-left: 6px solid #ffcb05;
+    margin-bottom: 2rem;
+    padding: 0.25rem 0 0.25rem 1rem;
+}
+.main-content > section + section, .main-content > section + aside {
+    border-top: 1px solid #cdd9e3;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+}
+.main-content img {
+    border-radius: 10px;
+    margin: 1.5rem auto;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cdd9e3;
+    border-radius: 10px;
+    padding: 1.25rem;
+}
+.card > :last-child {
+    margin-bottom: 0;
+}
+.video-intro {
+    background-color: #ffffff;
+}
+.video-intro iframe {
+    aspect-ratio: 16 / 9;
+    border: 0;
+    display: block;
+    height: auto;
+    width: 100%;
+}
+/* Source: https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio */
+
+.card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+/* Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Grids */
+
+.card-grid > h2, .card-grid > p, .card-grid > img {
+    grid-column: 1 / -1;
+}
+.card-grid .card {
+    margin: 0;
+}
+.content-flow > h3 {
+    border-left: 5px solid #ffcb05;
+    margin-top: 2rem;
+    padding-left: 0.75rem;
+}
+.content-flow > .card {
+    margin-top: 1.25rem;
+}
+
+.content-list, .step-list {
+    padding: 1.25rem 1.25rem 0 2.75rem;
+}
+.card.content-list {
+    padding-bottom: 1.25rem;
+}
+.content-list li:last-child, .step-list li:last-child {
+    margin-bottom: 0;
+}
+.contact-panel {
+    background-color: #00274c;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 1.5rem;
+}
+.contact-panel h2, .contact-panel a {
+    color: #ffffff;
+}
+.contact-panel a:hover, .contact-panel a:focus {
+    color: #ffcb05;
+}
+.next-step {
+    background: linear-gradient(135deg, #fff5c2 0%, #e8f0f7 100%);
+    border-color: #ffcb05;
+}
+/* Source: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/linear-gradient */
+
+.primary-action {
+    background-color: #00274c;
+    border: 2px solid #00274c;
+    border-radius: 6px;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1.4;
+    padding: 0.625rem 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+.primary-action:hover, .primary-action:focus {
+    background-color: #ffffff;
+    color: #00274c;
+}
+
+.table-scroll {
+    background-color: #ffffff;
+    border: 1px solid #cdd9e3;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+}
+/* Source: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x */
+
+.table-scroll:focus {
+    outline: 3px solid #ffcb05;
+    outline-offset: 3px;
+}
+
+.resource-table {
+    border-collapse: collapse;
+    margin: 0;
+    min-width: 672px;
+    width: 100%;
+}
+.resource-table caption {
+    background-color: #e8f0f7;
+    color: #00274c;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: left;
+}
+.resource-table th, .resource-table td {
+    border: 1px solid #cdd9e3;
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: top;
+}
+.resource-table th {
+    background-color: #00274c;
+    color: #ffffff;
+}
+.resource-table tr:nth-child(even) {
+    background-color: #f5f8fb;
+}
+.site-footer {
+    background-color: #00274c;
+    border-top: 6px solid #ffcb05;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.site-footer p, .site-footer address {
+    margin: 0 auto 0.75rem;
+    max-width: 672px;
+}
+.site-footer address {
+    font-style: normal;
+}
+.site-footer a {
+    color: #ffffff;
+    display: inline-block;
+    min-height: 44px;
+    padding: 0.5rem 0.25rem;
+}
+.site-footer a:hover, .site-footer a:focus {
+    color: #ffcb05;
+}
