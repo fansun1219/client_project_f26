@@ -295,6 +295,9 @@ h2[id], h3[id], section[id] {
 .error-intro {
     max-width: 44rem;
 }
+.error-code, .error-intro .page-title {
+    display: block;
+}
 .error-code {
     color: #00274c;
     font-family: Georgia, "Times New Roman", serif;
