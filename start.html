@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starting Your ELO Experience</title>
-    <link rel="icon" href="images/UMSI_signature_vertical_informal_solidblue.jpg" type="image/jpeg">
+    <link rel="icon" href="images/umsi_signature_vertical_informal_solidblue.jpg" type="image/jpeg">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/site.js" defer></script>
+    <script src="js/resource-filter.js" defer></script>
 </head>
 <body>
 
     <header class="site-header">
         <a class="skip-link" href = "#main">Skip to Main Content</a>
         <div class="header-inner">
-        <img class="site-logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <img class="site-logo" src="images/umsi_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav class="site-nav" aria-label="Primary navigation">
             <ul>
                 <li><a href = "index.html">Home</a></li>
@@ -26,26 +28,43 @@
   </header>
 <main class="main-content" id="main">
 <h1 class="page-title">Let's Start Your Journey!</h1>
+  <div class="page-content">
+
 
 <section class="content-flow">
-  <h2>Starting the Experience</h2>
+  <div class="media-split">
+    <div class="content-flow">
+<h2 id="starting-overview">Starting the Experience</h2>
   <p>At the beginning of your project, turn your preparation into a clear, professional partnership by establishing communication, planning productive initial meetings, and confirming expectations with your team and project partner.</p>
 
-  <img src="images/start_prep.png" alt="A group of students discusses a project around a laptop.">
+      </div>
+    <img src="images/start_prep.png" alt="A group of students discusses a project around a laptop.">
   <!-- Image alternative text was developed with OpenAI Codex after reviewing the selected images. OpenAI. (2026). Codex [Large language model]. -->
 
-  <h3>Why a Strong Start Matters</h3>
+  </div>
+
+  <div class="media-split">
+    <div class="content-flow">
+<h3 id="why-starting">Why a Strong Start Matters</h3>
   <p>First impressions shape the direction of a partnership. During the starting phase, abstract project ideas become structured, professional commitments as your team and client clarify their expectations and responsibilities.</p>
   <p>By establishing clear team agreements, co-creating meeting agendas, and aligning on the project scope early, you can build <strong>psychological safety within your team and trust with your client</strong>. Learning to navigate this early uncertainty is an important professional skill that can support the project throughout its lifecycle.</p>
+    </div>
+    <img src="images/start_plan.png" alt="A group works together around a table covered with sticky notes.">
+  <!-- Image alternative text was developed with OpenAI Codex after reviewing the selected images. OpenAI. (2026). Codex [Large language model]. -->
+  </div>
 
-  <h3>What to Establish at the Start</h3>
+  
+    <section class="content-flow">
+<h3 id="starting-goals">What to Establish at the Start</h3>
   <ul class="card content-list">
     <li><strong>Partner Communication:</strong> Create clear and professional outreach that begins a respectful working relationship.</li>
     <li><strong>First Meetings:</strong> Plan productive kickoff meetings that define project goals, responsibilities, and boundaries.</li>
     <li><strong>Formalizing Agreements:</strong> Document the commitments, expectations, and project scope shared by your team and partner.</li>
   </ul>
 
-  <h3>Recommended Starting Process</h3>
+      </section>
+    <section class="content-flow">
+<h3 id="starting-process">Recommended Starting Process</h3>
   <ol class="card step-list">
     <li>
       <strong>Contact your partner:</strong> Send a professional introduction and confirm the appropriate people, communication channel, and meeting time.</li>
@@ -55,11 +74,23 @@
     <li><strong>Document the agreement:</strong> Record decisions, milestones, responsibilities, and immediate next steps so that everyone has a shared reference.</li>
   </ol>
 
-  <img src="images/start_plan.png" alt="A group works together around a table covered with sticky notes.">
-  <!-- Image alternative text was developed with OpenAI Codex after reviewing the selected images. OpenAI. (2026). Codex [Large language model]. -->
+      </section>
+  
 
-  <h3>Featured Starting Resources</h3>
-  <ul class="card content-list">
+  
+
+  <h3 id="starting-tools">Featured Starting Resources</h3>
+  <div class="resource-filter" id="resource-filter" hidden>
+    <label for="resource-search">Filter starting resources</label>
+    <p id="resource-search-help">Search resource names and descriptions.</p>
+    <div class="filter-controls">
+      <input type="search" id="resource-search" aria-describedby="resource-search-help" aria-controls="starting-resources">
+      <button class="primary-action" type="button" id="clear-resource-search">Clear</button>
+    </div>
+    <p id="resource-count" role="status" aria-atomic="true"></p>
+  </div>
+  <!-- /* Source for announcing updated results: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/status_role */ -->
+  <ul class="card content-list" id="starting-resources">
     <li><a href="https://docs.google.com/document/d/1fWFXwoW5fKX_Tctn97Gio5XZDwILNlqIOyKKE8Yk5J0/edit?usp=drive_link">Initial Client Email Examples</a>: Review sample messages for making clear and professional first contact with a client or project partner.</li>
     <li><a href="https://docs.google.com/document/d/1ItXxYauAcPoaGMUZWuJsX-OLFfGmeBOWT7JNhoZxGyU/edit?usp=drive_link">Initial Client Meeting Sample Agenda</a>: Use this step-by-step agenda to prepare for and lead a productive kickoff meeting with your project partner.</li>
     <li><a href="https://ginsberg.umich.edu/article/campus-community-partnerships-toolkit">Ginsberg Center Student-Client Partnership Toolkit</a>: Explore principles and practical guidance for building respectful, reciprocal relationships with community and project partners.</li>
@@ -77,13 +108,37 @@
 
 <!-- Content on the Starting Your Experience page was adapted from the SI 539 Client Project ELO Content document and generated with OpenAI Codex in response to prompts asking for help writing the starting process, resource descriptions, and transition to the next project stage. OpenAI. (2026). Codex [Large language model]. -->
 
+  </div>
 </main>
-<footer class="site-footer">
-        <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
-      <address>
-        <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
-      </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <section>
+          <h2>Contact ELO</h2>
+          <p>University of Michigan School of Information</p>
+          <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">About the Engaged Learning Office</a>
+          <address>
+            <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
+          </address>
+        </section>
+        <section>
+          <h2>Explore</h2>
+          <nav aria-label="Footer resources">
+            <ul>
+              <li><a href="index.html#featured-programs">Explore programs</a></li>
+              <li><a href="prep.html">Preparation</a></li>
+              <li><a href="start.html">Starting</a></li>
+              <li><a href="during.html">Management and wrap-up</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section>
+          <h2>Stay Connected</h2>
+          <p>Find ELO programs, workshops, events, and opportunities in the weekly newsletter.</p>
+          <a href="https://umsi.info/elo-newsletter">Sign up for the ELO newsletter</a>
+        </section>
+      </div>
+      <!-- /* ELO information: https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office */ -->
+      <p class="footer-copyright">&copy; <span id="current-year">2026</span> Regents of the University of Michigan</p>
     </footer>
     
 </body>
